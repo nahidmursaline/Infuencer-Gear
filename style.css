@@ -16,14 +16,6 @@ main {
          
 }
 
-.logo{
-    text-align: center;
-    padding: 20px;
-   
-}
-.logo-margin{
-    padding: 20px;
-}
 .popular-collection{
     text-align: center;
     color:  #18191F;
@@ -41,9 +33,6 @@ main {
 }
 .start-part{
 margin-top: 90px;
-
-
-
 
 }
 
@@ -75,6 +64,16 @@ margin-top: 90px;
     transition: transform 0.5s ease-out;
     
 }
+
+.logo{
+    text-align: center;
+    padding: 20px;
+   
+}
+.logo-margin{
+    padding: 20px;
+}
+
 hr{
     border: solid rgba(128, 128, 128, 0.432) 1px;
     width:1110px ;
@@ -182,10 +181,59 @@ footer{
     }
     .footer-media{
         width: 100%;
+        margin-top: 100px;
     }
    
 }
 
+
+/* for Tablets */
+
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     
+    
+    .container{
+        width: 100%;
+    }
+    .initial-part{
+       display: flex;
+       
+          
+    }
+    .start-part{
+        
+        width: 45%;
+    }
+    .camera{
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .logo-media {
+        width: 100%;
+        
+    }
+    .logo{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+     
+    }
+    .all-gadget{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 15px;
+        
+    }
+    .footer-media{
+        width: 100%;
+        margin-top: 100px;
+    }
+   
+     
 }
