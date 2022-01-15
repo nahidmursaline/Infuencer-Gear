@@ -1,5 +1,6 @@
 header{
     margin-left: 135px;
+    color: #3A3A3A;
 }
 
 body{
@@ -9,19 +10,46 @@ body{
 
 main {
    display: flex;
-   flex-direction: column;
-  
    align-items: center;
-        
+   flex-direction: column;
+   width: 1325px;
+         
+}
+
+.logo{
+    text-align: center;
+    padding: 20px;
+   
+}
+.logo-margin{
+    padding: 20px;
+}
+.popular-collection{
+    text-align: center;
+    color:  #18191F;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.popular-title{
+    color: #3A3A3A;
+   
+}
+.title-weight{
+    font-weight: bold;
+    font-size: 35px;
+    color: #3A3A3A;;
 }
 .start-part{
-margin-top: 50px;
-margin-left: 80px;
+margin-top: 90px;
+
+
+
 
 }
 
 .initial-part{
     display: flex;
+    margin-bottom: 100px;
     
 }
 .Preebook-button{
@@ -29,12 +57,27 @@ margin-left: 80px;
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 25px;
+    color: white;
     
 }
-
+.button-margin-bottom{
+    margin-bottom: 30px;
+}
 .camera img{
-    width: 65%;
-    margin-left: 150px;
+    width: 85%;
+    margin-left: 50px;
+    
+}
+.camera img:hover{
+   
+    transform: scale(1.2) rotate(-30deg);
+    
+    transition: transform 0.5s ease-out;
+    
+}
+hr{
+    border: solid rgba(128, 128, 128, 0.432) 1px;
+    width:1110px ;
     
 }
 .rating{
@@ -45,7 +88,8 @@ margin-left: 80px;
 .collections{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
+    margin-top: 40px;
 }
 .collection{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -56,10 +100,37 @@ margin-left: 80px;
     font-family: 'Inter', sans-serif;
     color: gray;
 }
+.see-more{
+    text-align: end;
+    color: #E02C6D
+    ;
+}
+.all-gadget{
+    display: flex;
+    width: 1110px;
+    padding: 70px;
+    margin-top: 50px;
+    
+}
+.all-gadget img{
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 90px;
+}
+.join-button{
+    background-color: #E02C6D;;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+}
+.arrow-margin{
+    margin-left: 7px;
+}
 footer{
     text-align: center;
     background-color: #0A0826;
     color: white;
+    padding: 15px;
 }
 .footer-influencer{
     font-family: 'Poppins', sans-serif;
@@ -67,16 +138,54 @@ footer{
 .footer-copy{
     font-family: 'Manrope', sans-serif;
 }
-.social-media{
-    padding: 5px;
+
+.fab {
+    margin-right: 10px;
+    color: white;
+}
+/* media query */
+
+
+/* For mobile devices */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .initial-part{
+        padding: 20px;
+        flex-direction: column; 
+    }
     
+    .start-part{
+        order: 2;
+    }
+    .logo-media {
+        width: 100%;
+      
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     
+    }
+    .all-gadget{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        
+    }
+    .footer-media{
+        width: 100%;
+    }
+   
 }
-.insta{
-    margin-right: 5px;
-}
-.fb{
-    margin-right: 5px; 
-}
-.twt{
-    margin-right: 5px;
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
 }
